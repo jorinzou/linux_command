@@ -1,0 +1,22 @@
+参考：https://blog.csdn.net/delphiwcdj/article/details/7387325
+
+跟踪一个进程的系统调用或信号产生的情况
+
+strace -f 除了跟踪当前进程外，还跟踪其子进程
+strace -o file 将输出信息写到文件file中，而不是显示到标准错误输出（stderr）
+strace -o output.log ./st1
+
+strace -p pid 绑定到一个由PID对应的正在运行的进程，此参数常用来调试后台进程（守护进程）
+strace -i 找到地址方便gdb详细调用
+strace -i ./st1
+
+strace的输出为标准错误输出，因此可以像下面这样将显示内容输出到标准输出上，通过管道再传给grep、less等。
+实现过滤功能：
+strace ./st1 2>&1| grep open
+2>&1     将标准出错重定向到标准输出
+2>          代表错误重定向
+&1         代表标准输出
+
+
+
+

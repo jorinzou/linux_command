@@ -1,0 +1,3 @@
+修改sdk所属用户与用户组
+chown -R zze /dir/xxx
+chgrp -R zze /dir/xxx

@@ -1,0 +1,4 @@
+netstat -nap | grep pid
+查看 某个进程下的端口连接
+
+netstat -tunlp | grep 端口号

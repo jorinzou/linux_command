@@ -1,0 +1,11 @@
+gdb调试看不到栈信息：
+设置绝对路径： set solib-absolute-prefix    /home/nfs/lib:/home/3520D_fs/rootfs/lib/:/home/share/Hi3520D_SDK_V1.0.3.0/mpp/lib
+
+设置相对路径:
+设置所有的库路径：set solib-search-path /home/nfs/lib:/home/3520D_fs/rootfs/lib/:/home/share/Hi3520D_SDK_V1.0.3.0/mpp/lib
+库与库之间用 ":" 号分开
+
+where查看程序出错信息
+
+参考连接：
+https://blog.csdn.net/yuanbinquan/article/details/46548727

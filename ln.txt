@@ -1,0 +1,1 @@
+ln -s xxx1 xxx2   其中xxx2为符号链接

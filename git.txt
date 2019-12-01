@@ -1,0 +1,29 @@
+﻿1.1 基本用法
+git add hdl_zigbee_gateway
+git commit -m  “提交hdl_zigbee_gateway程序，是一个辅助网关的程序，有rj45检测，按键检测，启动zigbee_gateway”
+git config --global user.email "2391387647.com"
+git config --global user.name "zze"
+git push
+
+1.2 分支
+创建分支 
+git branch  <branch name>
+
+切换分支
+git checkout <branch name>
+
+删除分支
+git checkout -d <branch name>
+
+合并分支
+git merge <branch name>
+
+git fetch 
+从远程获取最新版本到本地，不会自动merge
+
+
+
+
+
+
+

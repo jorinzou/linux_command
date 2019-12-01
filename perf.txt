@@ -1,0 +1,14 @@
+参考文章
+https://www.ibm.com/developerworks/cn/linux/l-cn-perf1/
+
+1.perf top -p pid -K -g
+忽略内核调用symbol，查看函数级别的CPU性能消耗统计
+给线程起名字之后，通过这个命令也可以对各个线程进行耗时进行采样。
+
+2.perf stat xxx
+分析程序xxx的CPU bound 程序的调优和 IO bound 的调优 
+
+3.perf record -e cpu-clock xxxx
+perf report
+查看热点函数
+

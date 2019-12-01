@@ -1,0 +1,2 @@
+top -H -p `pidof xxxx`
+查看程序xxxx中各线程的运行状态

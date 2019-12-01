@@ -1,0 +1,2 @@
+taskset -c 3 xxxx
+指定xxx程序在3核心上跑

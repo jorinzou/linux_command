@@ -1,0 +1,5 @@
+readelf -s xxx.so
+可以查看动态链接库中符号信息
+
+mipsel-openwrt-linux-musl-readelf -d  zigbee_gateway
+查看zigbee_gateway链接了哪些库
