@@ -1,0 +1,6 @@
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S     0  3379  3331  0  80   0 - 52539 wait   pts/0    00:00:00 su
+4 S     0  3382  3379  0  80   0 - 29157 n_tty_ pts/0    00:00:01 bash
+4 S     0 24960 24906  0  80   0 - 52539 wait   pts/4    00:00:00 su
+4 S     0 24965 24960  0  80   0 - 29183 wait   pts/4    00:00:02 bash
+0 R     0 30902 24965  0  80   0 - 34352 -      pts/4    00:00:00 ps
