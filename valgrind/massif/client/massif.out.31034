@@ -1,0 +1,2244 @@
+desc: --heap=yes --massif-out-file=massif.out.%p
+cmd: ./client
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=33837353
+mem_heap_B=1070543
+mem_heap_extra_B=323737
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1070543 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 570240 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 544896 0x40464C: parse_object (cJSON.c:616)
+   n1: 544896 0x403F6D: parse_value (cJSON.c:443)
+    n1: 544896 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 544896 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 544896 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 544896 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 544896 0x40264C: do_socket (socket_client.c:235)
+         n1: 544896 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 544896 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 544896 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 25344 in 2 places, all below massif's threshold (1.00%)
+ n1: 279180 0x404A43: print_object (cJSON.c:690)
+  n1: 279180 0x40404D: print_value (cJSON.c:476)
+   n1: 279180 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 279180 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 279180 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 279180 0x40264C: do_socket (socket_client.c:235)
+       n1: 279180 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 279180 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 279180 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 215820 0x40376E: parse_string (cJSON.c:201)
+  n2: 107712 0x403EF4: parse_value (cJSON.c:431)
+   n1: 104346 0x40471A: parse_object (cJSON.c:629)
+    n1: 104346 0x403F6D: parse_value (cJSON.c:443)
+     n1: 104346 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 104346 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 104346 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 104346 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 104346 0x40264C: do_socket (socket_client.c:235)
+          n1: 104346 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 104346 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 104346 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 3366 in 1 place, below massif's threshold (1.00%)
+  n1: 105732 0x4046A2: parse_object (cJSON.c:620)
+   n1: 105732 0x403F6D: parse_value (cJSON.c:443)
+    n1: 105732 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 105732 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 105732 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 105732 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 105732 0x40264C: do_socket (socket_client.c:235)
+         n1: 105732 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 105732 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 105732 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 2376 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=72519249
+mem_heap_B=2300738
+mem_heap_extra_B=696206
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=98398010
+mem_heap_B=3125703
+mem_heap_extra_B=945665
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3125703 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1670400 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 1596160 0x40464C: parse_object (cJSON.c:616)
+   n1: 1596160 0x403F6D: parse_value (cJSON.c:443)
+    n1: 1596160 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 1596160 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 1596160 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 1596160 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 1596160 0x40264C: do_socket (socket_client.c:235)
+         n1: 1596160 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 1596160 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 1596160 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 74240 in 2 places, all below massif's threshold (1.00%)
+ n1: 817800 0x404A43: print_object (cJSON.c:690)
+  n1: 817800 0x40404D: print_value (cJSON.c:476)
+   n1: 817800 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 817800 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 817800 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 817800 0x40264C: do_socket (socket_client.c:235)
+       n1: 817800 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 817800 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 817800 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 632200 0x40376E: parse_string (cJSON.c:201)
+  n2: 315520 0x403EF4: parse_value (cJSON.c:431)
+   n1: 305660 0x40471A: parse_object (cJSON.c:629)
+    n1: 305660 0x403F6D: parse_value (cJSON.c:443)
+     n1: 305660 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 305660 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 305660 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 305660 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 305660 0x40264C: do_socket (socket_client.c:235)
+          n1: 305660 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 305660 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 305660 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 9860 in 1 place, below massif's threshold (1.00%)
+  n1: 309720 0x4046A2: parse_object (cJSON.c:620)
+   n1: 309720 0x403F6D: parse_value (cJSON.c:443)
+    n1: 309720 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 309720 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 309720 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 309720 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 309720 0x40264C: do_socket (socket_client.c:235)
+         n1: 309720 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 309720 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 309720 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 6960 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=133889497
+mem_heap_B=4255503
+mem_heap_extra_B=1287545
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4255503 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2275200 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 2174080 0x40464C: parse_object (cJSON.c:616)
+   n1: 2174080 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2174080 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2174080 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2174080 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2174080 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2174080 0x40264C: do_socket (socket_client.c:235)
+         n1: 2174080 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2174080 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2174080 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 101120 in 2 places, all below massif's threshold (1.00%)
+ n1: 1113900 0x404A43: print_object (cJSON.c:690)
+  n1: 1113900 0x40404D: print_value (cJSON.c:476)
+   n1: 1113900 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 1113900 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 1113900 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 1113900 0x40264C: do_socket (socket_client.c:235)
+       n1: 1113900 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 1113900 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 1113900 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 861100 0x40376E: parse_string (cJSON.c:201)
+  n2: 429760 0x403EF4: parse_value (cJSON.c:431)
+   n1: 416330 0x40471A: parse_object (cJSON.c:629)
+    n1: 416330 0x403F6D: parse_value (cJSON.c:443)
+     n1: 416330 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 416330 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 416330 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 416330 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 416330 0x40264C: do_socket (socket_client.c:235)
+          n1: 416330 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 416330 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 416330 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 13430 in 1 place, below massif's threshold (1.00%)
+  n1: 421860 0x4046A2: parse_object (cJSON.c:620)
+   n1: 421860 0x403F6D: parse_value (cJSON.c:443)
+    n1: 421860 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 421860 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 421860 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 421860 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 421860 0x40264C: do_socket (socket_client.c:235)
+         n1: 421860 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 421860 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 421860 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 9480 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=163465977
+mem_heap_B=5197003
+mem_heap_extra_B=1572493
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5197003 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2779200 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 2655680 0x40464C: parse_object (cJSON.c:616)
+   n1: 2655680 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2655680 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2655680 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2655680 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2655680 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2655680 0x40264C: do_socket (socket_client.c:235)
+         n1: 2655680 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2655680 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2655680 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 123520 in 2 places, all below massif's threshold (1.00%)
+ n1: 1360650 0x404A43: print_object (cJSON.c:690)
+  n1: 1360650 0x40404D: print_value (cJSON.c:476)
+   n1: 1360650 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 1360650 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 1360650 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 1360650 0x40264C: do_socket (socket_client.c:235)
+       n1: 1360650 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 1360650 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 1360650 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 1051850 0x40376E: parse_string (cJSON.c:201)
+  n2: 524960 0x403EF4: parse_value (cJSON.c:431)
+   n1: 508555 0x40471A: parse_object (cJSON.c:629)
+    n1: 508555 0x403F6D: parse_value (cJSON.c:443)
+     n1: 508555 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 508555 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 508555 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 508555 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 508555 0x40264C: do_socket (socket_client.c:235)
+          n1: 508555 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 508555 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 508555 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 16405 in 1 place, below massif's threshold (1.00%)
+  n1: 515310 0x4046A2: parse_object (cJSON.c:620)
+   n1: 515310 0x403F6D: parse_value (cJSON.c:443)
+    n1: 515310 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 515310 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 515310 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 515310 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 515310 0x40264C: do_socket (socket_client.c:235)
+         n1: 515310 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 515310 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 515310 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 11580 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=199126866
+mem_heap_B=6332183
+mem_heap_extra_B=1916001
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6332183 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3386880 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 3236352 0x40464C: parse_object (cJSON.c:616)
+   n1: 3236352 0x403F6D: parse_value (cJSON.c:443)
+    n1: 3236352 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 3236352 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 3236352 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 3236352 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 3236352 0x40264C: do_socket (socket_client.c:235)
+         n1: 3236352 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 3236352 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 3236352 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 150528 in 2 places, all below massif's threshold (1.00%)
+ n1: 1658160 0x404A43: print_object (cJSON.c:690)
+  n1: 1658160 0x40404D: print_value (cJSON.c:476)
+   n1: 1658160 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 1658160 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 1658160 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 1658160 0x40264C: do_socket (socket_client.c:235)
+       n1: 1658160 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 1658160 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 1658160 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 1281840 0x40376E: parse_string (cJSON.c:201)
+  n2: 639744 0x403EF4: parse_value (cJSON.c:431)
+   n1: 619752 0x40471A: parse_object (cJSON.c:629)
+    n1: 619752 0x403F6D: parse_value (cJSON.c:443)
+     n1: 619752 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 619752 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 619752 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 619752 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 619752 0x40264C: do_socket (socket_client.c:235)
+          n1: 619752 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 619752 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 619752 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 19992 in 1 place, below massif's threshold (1.00%)
+  n1: 627984 0x4046A2: parse_object (cJSON.c:620)
+   n1: 627984 0x403F6D: parse_value (cJSON.c:443)
+    n1: 627984 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 627984 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 627984 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 627984 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 627984 0x40264C: do_socket (socket_client.c:235)
+         n1: 627984 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 627984 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 627984 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 14112 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=244928326
+mem_heap_B=7790163
+mem_heap_extra_B=2357205
+mem_stacks_B=0
+heap_tree=detailed
+n4: 7790163 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 4167360 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 3982144 0x40464C: parse_object (cJSON.c:616)
+   n1: 3982144 0x403F6D: parse_value (cJSON.c:443)
+    n1: 3982144 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 3982144 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 3982144 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 3982144 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 3982144 0x40264C: do_socket (socket_client.c:235)
+         n1: 3982144 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 3982144 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 3982144 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 185216 in 2 places, all below massif's threshold (1.00%)
+ n1: 2040270 0x404A43: print_object (cJSON.c:690)
+  n1: 2040270 0x40404D: print_value (cJSON.c:476)
+   n1: 2040270 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 2040270 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 2040270 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 2040270 0x40264C: do_socket (socket_client.c:235)
+       n1: 2040270 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 2040270 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 2040270 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 1577230 0x40376E: parse_string (cJSON.c:201)
+  n2: 787168 0x403EF4: parse_value (cJSON.c:431)
+   n1: 762569 0x40471A: parse_object (cJSON.c:629)
+    n1: 762569 0x403F6D: parse_value (cJSON.c:443)
+     n1: 762569 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 762569 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 762569 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 762569 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 762569 0x40264C: do_socket (socket_client.c:235)
+          n1: 762569 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 762569 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 762569 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 24599 in 1 place, below massif's threshold (1.00%)
+  n1: 772698 0x4046A2: parse_object (cJSON.c:620)
+   n1: 772698 0x403F6D: parse_value (cJSON.c:443)
+    n1: 772698 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 772698 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 772698 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 772698 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 772698 0x40264C: do_socket (socket_client.c:235)
+         n1: 772698 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 772698 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 772698 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 17364 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=274166893
+mem_heap_B=8720903
+mem_heap_extra_B=2638849
+mem_stacks_B=0
+heap_tree=detailed
+n4: 8720903 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 4665600 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 4458240 0x40464C: parse_object (cJSON.c:616)
+   n1: 4458240 0x403F6D: parse_value (cJSON.c:443)
+    n1: 4458240 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 4458240 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 4458240 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 4458240 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 4458240 0x40264C: do_socket (socket_client.c:235)
+         n1: 4458240 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 4458240 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 4458240 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 207360 in 2 places, all below massif's threshold (1.00%)
+ n1: 2284200 0x404A43: print_object (cJSON.c:690)
+  n1: 2284200 0x40404D: print_value (cJSON.c:476)
+   n1: 2284200 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 2284200 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 2284200 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 2284200 0x40264C: do_socket (socket_client.c:235)
+       n1: 2284200 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 2284200 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 2284200 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 1765800 0x40376E: parse_string (cJSON.c:201)
+  n2: 881280 0x403EF4: parse_value (cJSON.c:431)
+   n1: 853740 0x40471A: parse_object (cJSON.c:629)
+    n1: 853740 0x403F6D: parse_value (cJSON.c:443)
+     n1: 853740 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 853740 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 853740 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 853740 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 853740 0x40264C: do_socket (socket_client.c:235)
+          n1: 853740 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 853740 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 853740 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 27540 in 1 place, below massif's threshold (1.00%)
+  n1: 865080 0x4046A2: parse_object (cJSON.c:620)
+   n1: 865080 0x403F6D: parse_value (cJSON.c:443)
+    n1: 865080 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 865080 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 865080 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 865080 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 865080 0x40264C: do_socket (socket_client.c:235)
+         n1: 865080 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 865080 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 865080 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 19440 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=322841485
+mem_heap_B=10270343
+mem_heap_extra_B=3107713
+mem_stacks_B=0
+heap_tree=detailed
+n4: 10270343 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5495040 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 5250816 0x40464C: parse_object (cJSON.c:616)
+   n1: 5250816 0x403F6D: parse_value (cJSON.c:443)
+    n1: 5250816 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 5250816 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 5250816 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 5250816 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 5250816 0x40264C: do_socket (socket_client.c:235)
+         n1: 5250816 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 5250816 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 5250816 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 244224 in 2 places, all below massif's threshold (1.00%)
+ n1: 2690280 0x404A43: print_object (cJSON.c:690)
+  n1: 2690280 0x40404D: print_value (cJSON.c:476)
+   n1: 2690280 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 2690280 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 2690280 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 2690280 0x40264C: do_socket (socket_client.c:235)
+       n1: 2690280 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 2690280 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 2690280 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 2079720 0x40376E: parse_string (cJSON.c:201)
+  n2: 1037952 0x403EF4: parse_value (cJSON.c:431)
+   n1: 1005516 0x40471A: parse_object (cJSON.c:629)
+    n1: 1005516 0x403F6D: parse_value (cJSON.c:443)
+     n1: 1005516 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 1005516 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 1005516 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 1005516 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 1005516 0x40264C: do_socket (socket_client.c:235)
+          n1: 1005516 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 1005516 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 1005516 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 32436 in 1 place, below massif's threshold (1.00%)
+  n1: 1018872 0x4046A2: parse_object (cJSON.c:620)
+   n1: 1018872 0x403F6D: parse_value (cJSON.c:443)
+    n1: 1018872 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 1018872 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 1018872 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 1018872 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 1018872 0x40264C: do_socket (socket_client.c:235)
+         n1: 1018872 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 1018872 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 1018872 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 22896 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=350389962
+mem_heap_B=11147283
+mem_heap_extra_B=3373077
+mem_stacks_B=0
+heap_tree=detailed
+n4: 11147283 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5964480 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 5699392 0x40464C: parse_object (cJSON.c:616)
+   n1: 5699392 0x403F6D: parse_value (cJSON.c:443)
+    n1: 5699392 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 5699392 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 5699392 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 5699392 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 5699392 0x40264C: do_socket (socket_client.c:235)
+         n1: 5699392 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 5699392 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 5699392 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 265088 in 2 places, all below massif's threshold (1.00%)
+ n1: 2920110 0x404A43: print_object (cJSON.c:690)
+  n1: 2920110 0x40404D: print_value (cJSON.c:476)
+   n1: 2920110 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 2920110 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 2920110 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 2920110 0x40264C: do_socket (socket_client.c:235)
+       n1: 2920110 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 2920110 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 2920110 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 2257390 0x40376E: parse_string (cJSON.c:201)
+  n2: 1126624 0x403EF4: parse_value (cJSON.c:431)
+   n1: 1091417 0x40471A: parse_object (cJSON.c:629)
+    n1: 1091417 0x403F6D: parse_value (cJSON.c:443)
+     n1: 1091417 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 1091417 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 1091417 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 1091417 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 1091417 0x40264C: do_socket (socket_client.c:235)
+          n1: 1091417 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 1091417 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 1091417 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 35207 in 1 place, below massif's threshold (1.00%)
+  n1: 1105914 0x4046A2: parse_object (cJSON.c:620)
+   n1: 1105914 0x403F6D: parse_value (cJSON.c:443)
+    n1: 1105914 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 1105914 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 1105914 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 1105914 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 1105914 0x40264C: do_socket (socket_client.c:235)
+         n1: 1105914 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 1105914 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 1105914 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 24852 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=384022766
+mem_heap_B=12217903
+mem_heap_extra_B=3697065
+mem_stacks_B=0
+heap_tree=detailed
+n4: 12217903 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 6537600 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 6247040 0x40464C: parse_object (cJSON.c:616)
+   n1: 6247040 0x403F6D: parse_value (cJSON.c:443)
+    n1: 6247040 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 6247040 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 6247040 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 6247040 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 6247040 0x40264C: do_socket (socket_client.c:235)
+         n1: 6247040 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 6247040 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 6247040 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 290560 in 2 places, all below massif's threshold (1.00%)
+ n1: 3200700 0x404A43: print_object (cJSON.c:690)
+  n1: 3200700 0x40404D: print_value (cJSON.c:476)
+   n1: 3200700 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 3200700 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 3200700 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 3200700 0x40264C: do_socket (socket_client.c:235)
+       n1: 3200700 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 3200700 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 3200700 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 2474300 0x40376E: parse_string (cJSON.c:201)
+  n2: 1234880 0x403EF4: parse_value (cJSON.c:431)
+   n1: 1196290 0x40471A: parse_object (cJSON.c:629)
+    n1: 1196290 0x403F6D: parse_value (cJSON.c:443)
+     n1: 1196290 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 1196290 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 1196290 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 1196290 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 1196290 0x40264C: do_socket (socket_client.c:235)
+          n1: 1196290 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 1196290 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 1196290 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 38590 in 1 place, below massif's threshold (1.00%)
+  n1: 1212180 0x4046A2: parse_object (cJSON.c:620)
+   n1: 1212180 0x403F6D: parse_value (cJSON.c:443)
+    n1: 1212180 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 1212180 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 1212180 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 1212180 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 1212180 0x40264C: do_socket (socket_client.c:235)
+         n1: 1212180 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 1212180 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 1212180 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 27240 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=412247276
+mem_heap_B=13116363
+mem_heap_extra_B=3968941
+mem_stacks_B=0
+heap_tree=detailed
+n4: 13116363 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 7018560 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 6706624 0x40464C: parse_object (cJSON.c:616)
+   n1: 6706624 0x403F6D: parse_value (cJSON.c:443)
+    n1: 6706624 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 6706624 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 6706624 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 6706624 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 6706624 0x40264C: do_socket (socket_client.c:235)
+         n1: 6706624 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 6706624 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 6706624 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 311936 in 2 places, all below massif's threshold (1.00%)
+ n1: 3436170 0x404A43: print_object (cJSON.c:690)
+  n1: 3436170 0x40404D: print_value (cJSON.c:476)
+   n1: 3436170 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 3436170 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 3436170 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 3436170 0x40264C: do_socket (socket_client.c:235)
+       n1: 3436170 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 3436170 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 3436170 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 2656330 0x40376E: parse_string (cJSON.c:201)
+  n2: 1325728 0x403EF4: parse_value (cJSON.c:431)
+   n1: 1284299 0x40471A: parse_object (cJSON.c:629)
+    n1: 1284299 0x403F6D: parse_value (cJSON.c:443)
+     n1: 1284299 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 1284299 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 1284299 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 1284299 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 1284299 0x40264C: do_socket (socket_client.c:235)
+          n1: 1284299 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 1284299 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 1284299 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 41429 in 1 place, below massif's threshold (1.00%)
+  n1: 1301358 0x4046A2: parse_object (cJSON.c:620)
+   n1: 1301358 0x403F6D: parse_value (cJSON.c:443)
+    n1: 1301358 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 1301358 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 1301358 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 1301358 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 1301358 0x40264C: do_socket (socket_client.c:235)
+         n1: 1301358 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 1301358 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 1301358 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 29244 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=451626371
+mem_heap_B=14369903
+mem_heap_extra_B=4348297
+mem_stacks_B=0
+heap_tree=detailed
+n4: 14369903 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 7689600 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 7347840 0x40464C: parse_object (cJSON.c:616)
+   n1: 7347840 0x403F6D: parse_value (cJSON.c:443)
+    n1: 7347840 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 7347840 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 7347840 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 7347840 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 7347840 0x40264C: do_socket (socket_client.c:235)
+         n1: 7347840 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 7347840 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 7347840 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 341760 in 2 places, all below massif's threshold (1.00%)
+ n1: 3764700 0x404A43: print_object (cJSON.c:690)
+  n1: 3764700 0x40404D: print_value (cJSON.c:476)
+   n1: 3764700 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 3764700 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 3764700 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 3764700 0x40264C: do_socket (socket_client.c:235)
+       n1: 3764700 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 3764700 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 3764700 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 2910300 0x40376E: parse_string (cJSON.c:201)
+  n2: 1452480 0x403EF4: parse_value (cJSON.c:431)
+   n1: 1407090 0x40471A: parse_object (cJSON.c:629)
+    n1: 1407090 0x403F6D: parse_value (cJSON.c:443)
+     n1: 1407090 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 1407090 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 1407090 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 1407090 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 1407090 0x40264C: do_socket (socket_client.c:235)
+          n1: 1407090 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 1407090 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 1407090 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 45390 in 1 place, below massif's threshold (1.00%)
+  n1: 1425780 0x4046A2: parse_object (cJSON.c:620)
+   n1: 1425780 0x403F6D: parse_value (cJSON.c:443)
+    n1: 1425780 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 1425780 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 1425780 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 1425780 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 1425780 0x40264C: do_socket (socket_client.c:235)
+         n1: 1425780 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 1425780 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 1425780 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 32040 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=484245135
+mem_heap_B=15408210
+mem_heap_extra_B=4662470
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=515004753
+mem_heap_B=16387403
+mem_heap_extra_B=4958797
+mem_stacks_B=0
+heap_tree=detailed
+n4: 16387403 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 8769600 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 8379840 0x40464C: parse_object (cJSON.c:616)
+   n1: 8379840 0x403F6D: parse_value (cJSON.c:443)
+    n1: 8379840 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 8379840 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 8379840 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 8379840 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 8379840 0x40264C: do_socket (socket_client.c:235)
+         n1: 8379840 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 8379840 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 8379840 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 389760 in 2 places, all below massif's threshold (1.00%)
+ n1: 4293450 0x404A43: print_object (cJSON.c:690)
+  n1: 4293450 0x40404D: print_value (cJSON.c:476)
+   n1: 4293450 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 4293450 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 4293450 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 4293450 0x40264C: do_socket (socket_client.c:235)
+       n1: 4293450 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 4293450 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 4293450 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 3319050 0x40376E: parse_string (cJSON.c:201)
+  n2: 1656480 0x403EF4: parse_value (cJSON.c:431)
+   n1: 1604715 0x40471A: parse_object (cJSON.c:629)
+    n1: 1604715 0x403F6D: parse_value (cJSON.c:443)
+     n1: 1604715 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 1604715 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 1604715 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 1604715 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 1604715 0x40264C: do_socket (socket_client.c:235)
+          n1: 1604715 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 1604715 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 1604715 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 51765 in 1 place, below massif's threshold (1.00%)
+  n1: 1626030 0x4046A2: parse_object (cJSON.c:620)
+   n1: 1626030 0x403F6D: parse_value (cJSON.c:443)
+    n1: 1626030 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 1626030 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 1626030 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 1626030 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 1626030 0x40264C: do_socket (socket_client.c:235)
+         n1: 1626030 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 1626030 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 1626030 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 36540 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=552862769
+mem_heap_B=17592523
+mem_heap_extra_B=5323469
+mem_stacks_B=0
+heap_tree=detailed
+n4: 17592523 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 9414720 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 8996288 0x40464C: parse_object (cJSON.c:616)
+   n1: 8996288 0x403F6D: parse_value (cJSON.c:443)
+    n1: 8996288 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 8996288 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 8996288 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 8996288 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 8996288 0x40264C: do_socket (socket_client.c:235)
+         n1: 8996288 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 8996288 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 8996288 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 418432 in 2 places, all below massif's threshold (1.00%)
+ n1: 4609290 0x404A43: print_object (cJSON.c:690)
+  n1: 4609290 0x40404D: print_value (cJSON.c:476)
+   n1: 4609290 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 4609290 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 4609290 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 4609290 0x40264C: do_socket (socket_client.c:235)
+       n1: 4609290 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 4609290 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 4609290 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 3563210 0x40376E: parse_string (cJSON.c:201)
+  n2: 1778336 0x403EF4: parse_value (cJSON.c:431)
+   n1: 1722763 0x40471A: parse_object (cJSON.c:629)
+    n1: 1722763 0x403F6D: parse_value (cJSON.c:443)
+     n1: 1722763 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 1722763 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 1722763 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 1722763 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 1722763 0x40264C: do_socket (socket_client.c:235)
+          n1: 1722763 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 1722763 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 1722763 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 55573 in 1 place, below massif's threshold (1.00%)
+  n1: 1745646 0x4046A2: parse_object (cJSON.c:620)
+   n1: 1745646 0x403F6D: parse_value (cJSON.c:443)
+    n1: 1745646 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 1745646 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 1745646 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 1745646 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 1745646 0x40264C: do_socket (socket_client.c:235)
+         n1: 1745646 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 1745646 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 1745646 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 39228 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=598664198
+mem_heap_B=19050489
+mem_heap_extra_B=5764647
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=629423839
+mem_heap_B=20029649
+mem_heap_extra_B=6060943
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=669816980
+mem_heap_B=21315483
+mem_heap_extra_B=6450061
+mem_stacks_B=0
+heap_tree=detailed
+n4: 21315483 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 11407680 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 10900672 0x40464C: parse_object (cJSON.c:616)
+   n1: 10900672 0x403F6D: parse_value (cJSON.c:443)
+    n1: 10900672 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 10900672 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 10900672 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 10900672 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 10900672 0x40264C: do_socket (socket_client.c:235)
+         n1: 10900672 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 10900672 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 10900672 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 507008 in 2 places, all below massif's threshold (1.00%)
+ n1: 5585010 0x404A43: print_object (cJSON.c:690)
+  n1: 5585010 0x40404D: print_value (cJSON.c:476)
+   n1: 5585010 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 5585010 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 5585010 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 5585010 0x40264C: do_socket (socket_client.c:235)
+       n1: 5585010 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 5585010 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 5585010 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 4317490 0x40376E: parse_string (cJSON.c:201)
+  n2: 2154784 0x403EF4: parse_value (cJSON.c:431)
+   n1: 2087447 0x40471A: parse_object (cJSON.c:629)
+    n1: 2087447 0x403F6D: parse_value (cJSON.c:443)
+     n1: 2087447 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 2087447 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 2087447 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 2087447 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 2087447 0x40264C: do_socket (socket_client.c:235)
+          n1: 2087447 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 2087447 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 2087447 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 67337 in 1 place, below massif's threshold (1.00%)
+  n1: 2115174 0x4046A2: parse_object (cJSON.c:620)
+   n1: 2115174 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2115174 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2115174 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2115174 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2115174 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2115174 0x40264C: do_socket (socket_client.c:235)
+         n1: 2115174 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2115174 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2115174 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 47532 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=718829591
+mem_heap_B=22875683
+mem_heap_extra_B=6922213
+mem_stacks_B=0
+heap_tree=detailed
+n4: 22875683 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 12242880 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 11698752 0x40464C: parse_object (cJSON.c:616)
+   n1: 11698752 0x403F6D: parse_value (cJSON.c:443)
+    n1: 11698752 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 11698752 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 11698752 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 11698752 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 11698752 0x40264C: do_socket (socket_client.c:235)
+         n1: 11698752 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 11698752 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 11698752 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 544128 in 2 places, all below massif's threshold (1.00%)
+ n1: 5993910 0x404A43: print_object (cJSON.c:690)
+  n1: 5993910 0x40404D: print_value (cJSON.c:476)
+   n1: 5993910 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 5993910 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 5993910 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 5993910 0x40264C: do_socket (socket_client.c:235)
+       n1: 5993910 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 5993910 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 5993910 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 4633590 0x40376E: parse_string (cJSON.c:201)
+  n2: 2312544 0x403EF4: parse_value (cJSON.c:431)
+   n1: 2240277 0x40471A: parse_object (cJSON.c:629)
+    n1: 2240277 0x403F6D: parse_value (cJSON.c:443)
+     n1: 2240277 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 2240277 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 2240277 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 2240277 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 2240277 0x40264C: do_socket (socket_client.c:235)
+          n1: 2240277 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 2240277 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 2240277 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 72267 in 1 place, below massif's threshold (1.00%)
+  n1: 2270034 0x4046A2: parse_object (cJSON.c:620)
+   n1: 2270034 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2270034 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2270034 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2270034 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2270034 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2270034 0x40264C: do_socket (socket_client.c:235)
+         n1: 2270034 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2270034 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2270034 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 51012 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=778996795
+mem_heap_B=24790963
+mem_heap_extra_B=7501781
+mem_stacks_B=0
+heap_tree=detailed
+n4: 24790963 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 13268160 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 12678464 0x40464C: parse_object (cJSON.c:616)
+   n1: 12678464 0x403F6D: parse_value (cJSON.c:443)
+    n1: 12678464 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 12678464 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 12678464 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 12678464 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 12678464 0x40264C: do_socket (socket_client.c:235)
+         n1: 12678464 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 12678464 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 12678464 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 589696 in 2 places, all below massif's threshold (1.00%)
+ n1: 6495870 0x404A43: print_object (cJSON.c:690)
+  n1: 6495870 0x40404D: print_value (cJSON.c:476)
+   n1: 6495870 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 6495870 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 6495870 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 6495870 0x40264C: do_socket (socket_client.c:235)
+       n1: 6495870 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 6495870 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 6495870 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 5021630 0x40376E: parse_string (cJSON.c:201)
+  n2: 2506208 0x403EF4: parse_value (cJSON.c:431)
+   n1: 2427889 0x40471A: parse_object (cJSON.c:629)
+    n1: 2427889 0x403F6D: parse_value (cJSON.c:443)
+     n1: 2427889 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 2427889 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 2427889 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 2427889 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 2427889 0x40264C: do_socket (socket_client.c:235)
+          n1: 2427889 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 2427889 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 2427889 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 78319 in 1 place, below massif's threshold (1.00%)
+  n1: 2460138 0x4046A2: parse_object (cJSON.c:620)
+   n1: 2460138 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2460138 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2460138 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2460138 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2460138 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2460138 0x40264C: do_socket (socket_client.c:235)
+         n1: 2460138 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2460138 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2460138 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 55284 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=811108522
+mem_heap_B=25813163
+mem_heap_extra_B=7811133
+mem_stacks_B=0
+heap_tree=detailed
+n4: 25813163 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 13815360 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 13201344 0x40464C: parse_object (cJSON.c:616)
+   n1: 13201344 0x403F6D: parse_value (cJSON.c:443)
+    n1: 13201344 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 13201344 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 13201344 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 13201344 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 13201344 0x40264C: do_socket (socket_client.c:235)
+         n1: 13201344 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 13201344 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 13201344 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 614016 in 2 places, all below massif's threshold (1.00%)
+ n1: 6763770 0x404A43: print_object (cJSON.c:690)
+  n1: 6763770 0x40404D: print_value (cJSON.c:476)
+   n1: 6763770 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 6763770 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 6763770 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 6763770 0x40264C: do_socket (socket_client.c:235)
+       n1: 6763770 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 6763770 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 6763770 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 5228730 0x40376E: parse_string (cJSON.c:201)
+  n2: 2609568 0x403EF4: parse_value (cJSON.c:431)
+   n1: 2528019 0x40471A: parse_object (cJSON.c:629)
+    n1: 2528019 0x403F6D: parse_value (cJSON.c:443)
+     n1: 2528019 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 2528019 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 2528019 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 2528019 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 2528019 0x40264C: do_socket (socket_client.c:235)
+          n1: 2528019 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 2528019 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 2528019 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 81549 in 1 place, below massif's threshold (1.00%)
+  n1: 2561598 0x4046A2: parse_object (cJSON.c:620)
+   n1: 2561598 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2561598 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2561598 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2561598 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2561598 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2561598 0x40264C: do_socket (socket_client.c:235)
+         n1: 2561598 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2561598 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2561598 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 57564 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=844234286
+mem_heap_B=26867643
+mem_heap_extra_B=8130221
+mem_stacks_B=0
+heap_tree=detailed
+n4: 26867643 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 14379840 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 13740736 0x40464C: parse_object (cJSON.c:616)
+   n1: 13740736 0x403F6D: parse_value (cJSON.c:443)
+    n1: 13740736 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 13740736 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 13740736 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 13740736 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 13740736 0x40264C: do_socket (socket_client.c:235)
+         n1: 13740736 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 13740736 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 13740736 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 639104 in 2 places, all below massif's threshold (1.00%)
+ n1: 7040130 0x404A43: print_object (cJSON.c:690)
+  n1: 7040130 0x40404D: print_value (cJSON.c:476)
+   n1: 7040130 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 7040130 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 7040130 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 7040130 0x40264C: do_socket (socket_client.c:235)
+       n1: 7040130 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 7040130 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 7040130 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 5442370 0x40376E: parse_string (cJSON.c:201)
+  n2: 2716192 0x403EF4: parse_value (cJSON.c:431)
+   n1: 2631311 0x40471A: parse_object (cJSON.c:629)
+    n1: 2631311 0x403F6D: parse_value (cJSON.c:443)
+     n1: 2631311 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 2631311 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 2631311 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 2631311 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 2631311 0x40264C: do_socket (socket_client.c:235)
+          n1: 2631311 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 2631311 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 2631311 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 84881 in 1 place, below massif's threshold (1.00%)
+  n1: 2666262 0x4046A2: parse_object (cJSON.c:620)
+   n1: 2666262 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2666262 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2666262 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2666262 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2666262 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2666262 0x40264C: do_socket (socket_client.c:235)
+         n1: 2666262 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2666262 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2666262 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 59916 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=878712128
+mem_heap_B=27965163
+mem_heap_extra_B=8462333
+mem_stacks_B=0
+heap_tree=detailed
+n4: 27965163 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 14967360 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 14302144 0x40464C: parse_object (cJSON.c:616)
+   n1: 14302144 0x403F6D: parse_value (cJSON.c:443)
+    n1: 14302144 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 14302144 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 14302144 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 14302144 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 14302144 0x40264C: do_socket (socket_client.c:235)
+         n1: 14302144 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 14302144 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 14302144 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 665216 in 2 places, all below massif's threshold (1.00%)
+ n1: 7327770 0x404A43: print_object (cJSON.c:690)
+  n1: 7327770 0x40404D: print_value (cJSON.c:476)
+   n1: 7327770 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 7327770 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 7327770 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 7327770 0x40264C: do_socket (socket_client.c:235)
+       n1: 7327770 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 7327770 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 7327770 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 5664730 0x40376E: parse_string (cJSON.c:201)
+  n2: 2827168 0x403EF4: parse_value (cJSON.c:431)
+   n1: 2738819 0x40471A: parse_object (cJSON.c:629)
+    n1: 2738819 0x403F6D: parse_value (cJSON.c:443)
+     n1: 2738819 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 2738819 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 2738819 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 2738819 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 2738819 0x40264C: do_socket (socket_client.c:235)
+          n1: 2738819 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 2738819 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 2738819 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 88349 in 1 place, below massif's threshold (1.00%)
+  n1: 2775198 0x4046A2: parse_object (cJSON.c:620)
+   n1: 2775198 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2775198 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2775198 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2775198 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2775198 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2775198 0x40264C: do_socket (socket_client.c:235)
+         n1: 2775198 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2775198 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2775198 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 62364 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=914711055
+mem_heap_B=29111103
+mem_heap_extra_B=8809097
+mem_stacks_B=0
+heap_tree=detailed
+n4: 29111103 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 15580800 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 14888320 0x40464C: parse_object (cJSON.c:616)
+   n1: 14888320 0x403F6D: parse_value (cJSON.c:443)
+    n1: 14888320 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 14888320 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 14888320 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 14888320 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 14888320 0x40264C: do_socket (socket_client.c:235)
+         n1: 14888320 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 14888320 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 14888320 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 692480 in 2 places, all below massif's threshold (1.00%)
+ n1: 7628100 0x404A43: print_object (cJSON.c:690)
+  n1: 7628100 0x40404D: print_value (cJSON.c:476)
+   n1: 7628100 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 7628100 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 7628100 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 7628100 0x40264C: do_socket (socket_client.c:235)
+       n1: 7628100 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 7628100 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 7628100 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 5896900 0x40376E: parse_string (cJSON.c:201)
+  n2: 2943040 0x403EF4: parse_value (cJSON.c:431)
+   n1: 2851070 0x40471A: parse_object (cJSON.c:629)
+    n1: 2851070 0x403F6D: parse_value (cJSON.c:443)
+     n1: 2851070 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 2851070 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 2851070 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 2851070 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 2851070 0x40264C: do_socket (socket_client.c:235)
+          n1: 2851070 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 2851070 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 2851070 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 91970 in 1 place, below massif's threshold (1.00%)
+  n1: 2888940 0x4046A2: parse_object (cJSON.c:620)
+   n1: 2888940 0x403F6D: parse_value (cJSON.c:443)
+    n1: 2888940 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 2888940 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 2888940 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 2888940 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 2888940 0x40264C: do_socket (socket_client.c:235)
+         n1: 2888940 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 2888940 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 2888940 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 64920 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=971498062
+mem_heap_B=30918783
+mem_heap_extra_B=9356121
+mem_stacks_B=0
+heap_tree=detailed
+n4: 30918783 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 16548480 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 15812992 0x40464C: parse_object (cJSON.c:616)
+   n1: 15812992 0x403F6D: parse_value (cJSON.c:443)
+    n1: 15812992 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 15812992 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 15812992 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 15812992 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 15812992 0x40264C: do_socket (socket_client.c:235)
+         n1: 15812992 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 15812992 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 15812992 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 735488 in 2 places, all below massif's threshold (1.00%)
+ n1: 8101860 0x404A43: print_object (cJSON.c:690)
+  n1: 8101860 0x40404D: print_value (cJSON.c:476)
+   n1: 8101860 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 8101860 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 8101860 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 8101860 0x40264C: do_socket (socket_client.c:235)
+       n1: 8101860 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 8101860 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 8101860 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 6263140 0x40376E: parse_string (cJSON.c:201)
+  n2: 3125824 0x403EF4: parse_value (cJSON.c:431)
+   n1: 3028142 0x40471A: parse_object (cJSON.c:629)
+    n1: 3028142 0x403F6D: parse_value (cJSON.c:443)
+     n1: 3028142 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 3028142 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 3028142 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 3028142 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 3028142 0x40264C: do_socket (socket_client.c:235)
+          n1: 3028142 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 3028142 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 3028142 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 97682 in 1 place, below massif's threshold (1.00%)
+  n1: 3068364 0x4046A2: parse_object (cJSON.c:620)
+   n1: 3068364 0x403F6D: parse_value (cJSON.c:443)
+    n1: 3068364 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 3068364 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 3068364 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 3068364 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 3068364 0x40264C: do_socket (socket_client.c:235)
+         n1: 3068364 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 3068364 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 3068364 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 68952 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=1011384175
+mem_heap_B=32188463
+mem_heap_extra_B=9740329
+mem_stacks_B=0
+heap_tree=detailed
+n4: 32188463 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 17228160 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 16462464 0x40464C: parse_object (cJSON.c:616)
+   n1: 16462464 0x403F6D: parse_value (cJSON.c:443)
+    n1: 16462464 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 16462464 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 16462464 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 16462464 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 16462464 0x40264C: do_socket (socket_client.c:235)
+         n1: 16462464 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 16462464 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 16462464 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 765696 in 2 places, all below massif's threshold (1.00%)
+ n1: 8434620 0x404A43: print_object (cJSON.c:690)
+  n1: 8434620 0x40404D: print_value (cJSON.c:476)
+   n1: 8434620 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 8434620 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 8434620 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 8434620 0x40264C: do_socket (socket_client.c:235)
+       n1: 8434620 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 8434620 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 8434620 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 6520380 0x40376E: parse_string (cJSON.c:201)
+  n2: 3254208 0x403EF4: parse_value (cJSON.c:431)
+   n1: 3152514 0x40471A: parse_object (cJSON.c:629)
+    n1: 3152514 0x403F6D: parse_value (cJSON.c:443)
+     n1: 3152514 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 3152514 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 3152514 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 3152514 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 3152514 0x40264C: do_socket (socket_client.c:235)
+          n1: 3152514 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 3152514 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 3152514 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 101694 in 1 place, below massif's threshold (1.00%)
+  n1: 3194388 0x4046A2: parse_object (cJSON.c:620)
+   n1: 3194388 0x403F6D: parse_value (cJSON.c:443)
+    n1: 3194388 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 3194388 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 3194388 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 3194388 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 3194388 0x40264C: do_socket (socket_client.c:235)
+         n1: 3194388 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 3194388 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 3194388 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 71784 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=1052791370
+mem_heap_B=33506563
+mem_heap_extra_B=10139189
+mem_stacks_B=0
+heap_tree=detailed
+n4: 33506563 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 17933760 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 17136704 0x40464C: parse_object (cJSON.c:616)
+   n1: 17136704 0x403F6D: parse_value (cJSON.c:443)
+    n1: 17136704 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 17136704 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 17136704 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 17136704 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 17136704 0x40264C: do_socket (socket_client.c:235)
+         n1: 17136704 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 17136704 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 17136704 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 797056 in 2 places, all below massif's threshold (1.00%)
+ n1: 8780070 0x404A43: print_object (cJSON.c:690)
+  n1: 8780070 0x40404D: print_value (cJSON.c:476)
+   n1: 8780070 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 8780070 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 8780070 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 8780070 0x40264C: do_socket (socket_client.c:235)
+       n1: 8780070 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 8780070 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 8780070 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 6787430 0x40376E: parse_string (cJSON.c:201)
+  n2: 3387488 0x403EF4: parse_value (cJSON.c:431)
+   n1: 3281629 0x40471A: parse_object (cJSON.c:629)
+    n1: 3281629 0x403F6D: parse_value (cJSON.c:443)
+     n1: 3281629 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 3281629 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 3281629 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 3281629 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 3281629 0x40264C: do_socket (socket_client.c:235)
+          n1: 3281629 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 3281629 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 3281629 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 105859 in 1 place, below massif's threshold (1.00%)
+  n1: 3325218 0x4046A2: parse_object (cJSON.c:620)
+   n1: 3325218 0x403F6D: parse_value (cJSON.c:443)
+    n1: 3325218 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 3325218 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 3325218 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 3325218 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 3325218 0x40264C: do_socket (socket_client.c:235)
+         n1: 3325218 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 3325218 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 3325218 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 74724 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=1095720394
+mem_heap_B=34873069
+mem_heap_extra_B=10552691
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1129353195
+mem_heap_B=35943703
+mem_heap_extra_B=10876673
+mem_stacks_B=0
+heap_tree=detailed
+n4: 35943703 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 19238400 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 18383360 0x40464C: parse_object (cJSON.c:616)
+   n1: 18383360 0x403F6D: parse_value (cJSON.c:443)
+    n1: 18383360 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 18383360 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 18383360 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 18383360 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 18383360 0x40264C: do_socket (socket_client.c:235)
+         n1: 18383360 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 18383360 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 18383360 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 855040 in 2 places, all below massif's threshold (1.00%)
+ n1: 9418800 0x404A43: print_object (cJSON.c:690)
+  n1: 9418800 0x40404D: print_value (cJSON.c:476)
+   n1: 9418800 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 9418800 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 9418800 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 9418800 0x40264C: do_socket (socket_client.c:235)
+       n1: 9418800 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 9418800 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 9418800 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 7281200 0x40376E: parse_string (cJSON.c:201)
+  n2: 3633920 0x403EF4: parse_value (cJSON.c:431)
+   n1: 3520360 0x40471A: parse_object (cJSON.c:629)
+    n1: 3520360 0x403F6D: parse_value (cJSON.c:443)
+     n1: 3520360 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 3520360 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 3520360 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 3520360 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 3520360 0x40264C: do_socket (socket_client.c:235)
+          n1: 3520360 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 3520360 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 3520360 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 113560 in 1 place, below massif's threshold (1.00%)
+  n1: 3567120 0x4046A2: parse_object (cJSON.c:620)
+   n1: 3567120 0x403F6D: parse_value (cJSON.c:443)
+    n1: 3567120 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 3567120 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 3567120 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 3567120 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 3567120 0x40264C: do_socket (socket_client.c:235)
+         n1: 3567120 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 3567120 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 3567120 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 80160 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=1174647595
+mem_heap_B=37385529
+mem_heap_extra_B=11312967
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1223491206
+mem_heap_B=38940363
+mem_heap_extra_B=11783469
+mem_stacks_B=0
+heap_tree=detailed
+n4: 38940363 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 20842560 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 19916224 0x40464C: parse_object (cJSON.c:616)
+   n1: 19916224 0x403F6D: parse_value (cJSON.c:443)
+    n1: 19916224 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 19916224 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 19916224 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 19916224 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 19916224 0x40264C: do_socket (socket_client.c:235)
+         n1: 19916224 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 19916224 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 19916224 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 926336 in 2 places, all below massif's threshold (1.00%)
+ n1: 10204170 0x404A43: print_object (cJSON.c:690)
+  n1: 10204170 0x40404D: print_value (cJSON.c:476)
+   n1: 10204170 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 10204170 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 10204170 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 10204170 0x40264C: do_socket (socket_client.c:235)
+       n1: 10204170 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 10204170 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 10204170 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 7888330 0x40376E: parse_string (cJSON.c:201)
+  n2: 3936928 0x403EF4: parse_value (cJSON.c:431)
+   n1: 3813899 0x40471A: parse_object (cJSON.c:629)
+    n1: 3813899 0x403F6D: parse_value (cJSON.c:443)
+     n1: 3813899 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 3813899 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 3813899 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 3813899 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 3813899 0x40264C: do_socket (socket_client.c:235)
+          n1: 3813899 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 3813899 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 3813899 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 123029 in 1 place, below massif's threshold (1.00%)
+  n1: 3864558 0x4046A2: parse_object (cJSON.c:620)
+   n1: 3864558 0x403F6D: parse_value (cJSON.c:443)
+    n1: 3864558 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 3864558 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 3864558 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 3864558 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 3864558 0x40264C: do_socket (socket_client.c:235)
+         n1: 3864558 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 3864558 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 3864558 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 86844 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=1273517870
+mem_heap_B=40532843
+mem_heap_extra_B=12265357
+mem_stacks_B=0
+heap_tree=detailed
+n4: 40532843 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 21695040 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 20730816 0x40464C: parse_object (cJSON.c:616)
+   n1: 20730816 0x403F6D: parse_value (cJSON.c:443)
+    n1: 20730816 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 20730816 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 20730816 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 20730816 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 20730816 0x40264C: do_socket (socket_client.c:235)
+         n1: 20730816 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 20730816 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 20730816 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 964224 in 2 places, all below massif's threshold (1.00%)
+ n1: 10621530 0x404A43: print_object (cJSON.c:690)
+  n1: 10621530 0x40404D: print_value (cJSON.c:476)
+   n1: 10621530 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 10621530 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 10621530 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 10621530 0x40264C: do_socket (socket_client.c:235)
+       n1: 10621530 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 10621530 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 10621530 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 8210970 0x40376E: parse_string (cJSON.c:201)
+  n2: 4097952 0x403EF4: parse_value (cJSON.c:431)
+   n1: 3969891 0x40471A: parse_object (cJSON.c:629)
+    n1: 3969891 0x403F6D: parse_value (cJSON.c:443)
+     n1: 3969891 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 3969891 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 3969891 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 3969891 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 3969891 0x40264C: do_socket (socket_client.c:235)
+          n1: 3969891 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 3969891 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 3969891 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 128061 in 1 place, below massif's threshold (1.00%)
+  n1: 4022622 0x4046A2: parse_object (cJSON.c:620)
+   n1: 4022622 0x403F6D: parse_value (cJSON.c:443)
+    n1: 4022622 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 4022622 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 4022622 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 4022622 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 4022622 0x40264C: do_socket (socket_client.c:235)
+         n1: 4022622 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 4022622 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 4022622 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 90396 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=1325572660
+mem_heap_B=42189883
+mem_heap_extra_B=12766781
+mem_stacks_B=0
+heap_tree=detailed
+n4: 42189883 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 22582080 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 21578432 0x40464C: parse_object (cJSON.c:616)
+   n1: 21578432 0x403F6D: parse_value (cJSON.c:443)
+    n1: 21578432 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 21578432 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 21578432 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 21578432 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 21578432 0x40264C: do_socket (socket_client.c:235)
+         n1: 21578432 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 21578432 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 21578432 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1003648 in 2 places, all below massif's threshold (1.00%)
+ n1: 11055810 0x404A43: print_object (cJSON.c:690)
+  n1: 11055810 0x40404D: print_value (cJSON.c:476)
+   n1: 11055810 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 11055810 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 11055810 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 11055810 0x40264C: do_socket (socket_client.c:235)
+       n1: 11055810 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 11055810 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 11055810 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 8546690 0x40376E: parse_string (cJSON.c:201)
+  n2: 4265504 0x403EF4: parse_value (cJSON.c:431)
+   n1: 4132207 0x40471A: parse_object (cJSON.c:629)
+    n1: 4132207 0x403F6D: parse_value (cJSON.c:443)
+     n1: 4132207 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 4132207 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 4132207 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 4132207 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 4132207 0x40264C: do_socket (socket_client.c:235)
+          n1: 4132207 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 4132207 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 4132207 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 133297 in 1 place, below massif's threshold (1.00%)
+  n1: 4187094 0x4046A2: parse_object (cJSON.c:620)
+   n1: 4187094 0x403F6D: parse_value (cJSON.c:443)
+    n1: 4187094 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 4187094 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 4187094 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 4187094 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 4187094 0x40264C: do_socket (socket_client.c:235)
+         n1: 4187094 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 4187094 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 4187094 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 94092 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=1379824528
+mem_heap_B=43916863
+mem_heap_extra_B=13289385
+mem_stacks_B=0
+heap_tree=detailed
+n4: 43916863 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 23506560 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 22461824 0x40464C: parse_object (cJSON.c:616)
+   n1: 22461824 0x403F6D: parse_value (cJSON.c:443)
+    n1: 22461824 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 22461824 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 22461824 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 22461824 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 22461824 0x40264C: do_socket (socket_client.c:235)
+         n1: 22461824 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 22461824 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 22461824 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1044736 in 2 places, all below massif's threshold (1.00%)
+ n1: 11508420 0x404A43: print_object (cJSON.c:690)
+  n1: 11508420 0x40404D: print_value (cJSON.c:476)
+   n1: 11508420 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 11508420 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 11508420 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 11508420 0x40264C: do_socket (socket_client.c:235)
+       n1: 11508420 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 11508420 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 11508420 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 8896580 0x40376E: parse_string (cJSON.c:201)
+  n2: 4440128 0x403EF4: parse_value (cJSON.c:431)
+   n1: 4301374 0x40471A: parse_object (cJSON.c:629)
+    n1: 4301374 0x403F6D: parse_value (cJSON.c:443)
+     n1: 4301374 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 4301374 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 4301374 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 4301374 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 4301374 0x40264C: do_socket (socket_client.c:235)
+          n1: 4301374 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 4301374 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 4301374 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 138754 in 1 place, below massif's threshold (1.00%)
+  n1: 4358508 0x4046A2: parse_object (cJSON.c:620)
+   n1: 4358508 0x403F6D: parse_value (cJSON.c:443)
+    n1: 4358508 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 4358508 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 4358508 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 4358508 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 4358508 0x40264C: do_socket (socket_client.c:235)
+         n1: 4358508 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 4358508 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 4358508 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 97944 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=1436273526
+mem_heap_B=45713783
+mem_heap_extra_B=13833137
+mem_stacks_B=0
+heap_tree=detailed
+n4: 45713783 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 24468480 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 23380992 0x40464C: parse_object (cJSON.c:616)
+   n1: 23380992 0x403F6D: parse_value (cJSON.c:443)
+    n1: 23380992 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 23380992 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 23380992 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 23380992 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 23380992 0x40264C: do_socket (socket_client.c:235)
+         n1: 23380992 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 23380992 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 23380992 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1087488 in 2 places, all below massif's threshold (1.00%)
+ n1: 11979360 0x404A43: print_object (cJSON.c:690)
+  n1: 11979360 0x40404D: print_value (cJSON.c:476)
+   n1: 11979360 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 11979360 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 11979360 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 11979360 0x40264C: do_socket (socket_client.c:235)
+       n1: 11979360 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 11979360 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 11979360 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 9260640 0x40376E: parse_string (cJSON.c:201)
+  n2: 4621824 0x403EF4: parse_value (cJSON.c:431)
+   n1: 4477392 0x40471A: parse_object (cJSON.c:629)
+    n1: 4477392 0x403F6D: parse_value (cJSON.c:443)
+     n1: 4477392 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 4477392 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 4477392 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 4477392 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 4477392 0x40264C: do_socket (socket_client.c:235)
+          n1: 4477392 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 4477392 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 4477392 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 144432 in 1 place, below massif's threshold (1.00%)
+  n1: 4536864 0x4046A2: parse_object (cJSON.c:620)
+   n1: 4536864 0x403F6D: parse_value (cJSON.c:443)
+    n1: 4536864 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 4536864 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 4536864 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 4536864 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 4536864 0x40264C: do_socket (socket_client.c:235)
+         n1: 4536864 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 4536864 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 4536864 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 101952 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=1494750657
+mem_heap_B=47575263
+mem_heap_extra_B=14396425
+mem_stacks_B=0
+heap_tree=detailed
+n4: 47575263 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 25464960 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 24333184 0x40464C: parse_object (cJSON.c:616)
+   n1: 24333184 0x403F6D: parse_value (cJSON.c:443)
+    n1: 24333184 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 24333184 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 24333184 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 24333184 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 24333184 0x40264C: do_socket (socket_client.c:235)
+         n1: 24333184 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 24333184 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 24333184 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1131776 in 2 places, all below massif's threshold (1.00%)
+ n1: 12467220 0x404A43: print_object (cJSON.c:690)
+  n1: 12467220 0x40404D: print_value (cJSON.c:476)
+   n1: 12467220 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 12467220 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 12467220 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 12467220 0x40264C: do_socket (socket_client.c:235)
+       n1: 12467220 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 12467220 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 12467220 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 9637780 0x40376E: parse_string (cJSON.c:201)
+  n2: 4810048 0x403EF4: parse_value (cJSON.c:431)
+   n1: 4659734 0x40471A: parse_object (cJSON.c:629)
+    n1: 4659734 0x403F6D: parse_value (cJSON.c:443)
+     n1: 4659734 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 4659734 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 4659734 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 4659734 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 4659734 0x40264C: do_socket (socket_client.c:235)
+          n1: 4659734 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 4659734 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 4659734 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 150314 in 1 place, below massif's threshold (1.00%)
+  n1: 4721628 0x4046A2: parse_object (cJSON.c:620)
+   n1: 4721628 0x403F6D: parse_value (cJSON.c:443)
+    n1: 4721628 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 4721628 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 4721628 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 4721628 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 4721628 0x40264C: do_socket (socket_client.c:235)
+         n1: 4721628 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 4721628 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 4721628 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 106104 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=1525003244
+mem_heap_B=48538283
+mem_heap_extra_B=14687853
+mem_stacks_B=0
+heap_tree=detailed
+n4: 48538283 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 25980480 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 24825792 0x40464C: parse_object (cJSON.c:616)
+   n1: 24825792 0x403F6D: parse_value (cJSON.c:443)
+    n1: 24825792 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 24825792 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 24825792 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 24825792 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 24825792 0x40264C: do_socket (socket_client.c:235)
+         n1: 24825792 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 24825792 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 24825792 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1154688 in 2 places, all below massif's threshold (1.00%)
+ n1: 12719610 0x404A43: print_object (cJSON.c:690)
+  n1: 12719610 0x40404D: print_value (cJSON.c:476)
+   n1: 12719610 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 12719610 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 12719610 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 12719610 0x40264C: do_socket (socket_client.c:235)
+       n1: 12719610 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 12719610 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 12719610 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 9832890 0x40376E: parse_string (cJSON.c:201)
+  n2: 4907424 0x403EF4: parse_value (cJSON.c:431)
+   n1: 4754067 0x40471A: parse_object (cJSON.c:629)
+    n1: 4754067 0x403F6D: parse_value (cJSON.c:443)
+     n1: 4754067 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 4754067 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 4754067 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 4754067 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 4754067 0x40264C: do_socket (socket_client.c:235)
+          n1: 4754067 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 4754067 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 4754067 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 153357 in 1 place, below massif's threshold (1.00%)
+  n1: 4817214 0x4046A2: parse_object (cJSON.c:620)
+   n1: 4817214 0x403F6D: parse_value (cJSON.c:443)
+    n1: 4817214 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 4817214 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 4817214 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 4817214 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 4817214 0x40264C: do_socket (socket_client.c:235)
+         n1: 4817214 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 4817214 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 4817214 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 108252 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=1555932115
+mem_heap_B=49522823
+mem_heap_extra_B=14985777
+mem_stacks_B=0
+heap_tree=detailed
+n4: 49522823 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 26507520 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 25329408 0x40464C: parse_object (cJSON.c:616)
+   n1: 25329408 0x403F6D: parse_value (cJSON.c:443)
+    n1: 25329408 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 25329408 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 25329408 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 25329408 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 25329408 0x40264C: do_socket (socket_client.c:235)
+         n1: 25329408 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 25329408 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 25329408 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1178112 in 2 places, all below massif's threshold (1.00%)
+ n1: 12977640 0x404A43: print_object (cJSON.c:690)
+  n1: 12977640 0x40404D: print_value (cJSON.c:476)
+   n1: 12977640 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 12977640 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 12977640 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 12977640 0x40264C: do_socket (socket_client.c:235)
+       n1: 12977640 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 12977640 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 12977640 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 10032360 0x40376E: parse_string (cJSON.c:201)
+  n2: 5006976 0x403EF4: parse_value (cJSON.c:431)
+   n1: 4850508 0x40471A: parse_object (cJSON.c:629)
+    n1: 4850508 0x403F6D: parse_value (cJSON.c:443)
+     n1: 4850508 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 4850508 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 4850508 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 4850508 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 4850508 0x40264C: do_socket (socket_client.c:235)
+          n1: 4850508 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 4850508 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 4850508 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 156468 in 1 place, below massif's threshold (1.00%)
+  n1: 4914936 0x4046A2: parse_object (cJSON.c:620)
+   n1: 4914936 0x403F6D: parse_value (cJSON.c:443)
+    n1: 4914936 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 4914936 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 4914936 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 4914936 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 4914936 0x40264C: do_socket (socket_client.c:235)
+         n1: 4914936 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 4914936 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 4914936 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 110448 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=1587367786
+mem_heap_B=50523503
+mem_heap_extra_B=15288601
+mem_stacks_B=0
+heap_tree=detailed
+n4: 50523503 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 27043200 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 25841280 0x40464C: parse_object (cJSON.c:616)
+   n1: 25841280 0x403F6D: parse_value (cJSON.c:443)
+    n1: 25841280 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 25841280 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 25841280 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 25841280 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 25841280 0x40264C: do_socket (socket_client.c:235)
+         n1: 25841280 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 25841280 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 25841280 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1201920 in 2 places, all below massif's threshold (1.00%)
+ n1: 13239900 0x404A43: print_object (cJSON.c:690)
+  n1: 13239900 0x40404D: print_value (cJSON.c:476)
+   n1: 13239900 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 13239900 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 13239900 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 13239900 0x40264C: do_socket (socket_client.c:235)
+       n1: 13239900 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 13239900 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 13239900 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 10235100 0x40376E: parse_string (cJSON.c:201)
+  n2: 5108160 0x403EF4: parse_value (cJSON.c:431)
+   n1: 4948530 0x40471A: parse_object (cJSON.c:629)
+    n1: 4948530 0x403F6D: parse_value (cJSON.c:443)
+     n1: 4948530 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 4948530 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 4948530 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 4948530 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 4948530 0x40264C: do_socket (socket_client.c:235)
+          n1: 4948530 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 4948530 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 4948530 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 159630 in 1 place, below massif's threshold (1.00%)
+  n1: 5014260 0x4046A2: parse_object (cJSON.c:620)
+   n1: 5014260 0x403F6D: parse_value (cJSON.c:443)
+    n1: 5014260 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 5014260 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 5014260 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 5014260 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 5014260 0x40264C: do_socket (socket_client.c:235)
+         n1: 5014260 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 5014260 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 5014260 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 112680 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=1619310494
+mem_heap_B=51540323
+mem_heap_extra_B=15596293
+mem_stacks_B=0
+heap_tree=detailed
+n4: 51540323 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 27587520 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 26361408 0x40464C: parse_object (cJSON.c:616)
+   n1: 26361408 0x403F6D: parse_value (cJSON.c:443)
+    n1: 26361408 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 26361408 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 26361408 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 26361408 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 26361408 0x40264C: do_socket (socket_client.c:235)
+         n1: 26361408 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 26361408 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 26361408 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1226112 in 2 places, all below massif's threshold (1.00%)
+ n1: 13506390 0x404A43: print_object (cJSON.c:690)
+  n1: 13506390 0x40404D: print_value (cJSON.c:476)
+   n1: 13506390 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 13506390 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 13506390 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 13506390 0x40264C: do_socket (socket_client.c:235)
+       n1: 13506390 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 13506390 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 13506390 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 10441110 0x40376E: parse_string (cJSON.c:201)
+  n2: 5210976 0x403EF4: parse_value (cJSON.c:431)
+   n1: 5048133 0x40471A: parse_object (cJSON.c:629)
+    n1: 5048133 0x403F6D: parse_value (cJSON.c:443)
+     n1: 5048133 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 5048133 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 5048133 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 5048133 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 5048133 0x40264C: do_socket (socket_client.c:235)
+          n1: 5048133 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 5048133 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 5048133 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 162843 in 1 place, below massif's threshold (1.00%)
+  n1: 5115186 0x4046A2: parse_object (cJSON.c:620)
+   n1: 5115186 0x403F6D: parse_value (cJSON.c:443)
+    n1: 5115186 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 5115186 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 5115186 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 5115186 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 5115186 0x40264C: do_socket (socket_client.c:235)
+         n1: 5115186 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 5115186 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 5115186 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 114948 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=1651929238
+mem_heap_B=52578663
+mem_heap_extra_B=15910497
+mem_stacks_B=0
+heap_tree=detailed
+n4: 52578663 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 28143360 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 26892544 0x40464C: parse_object (cJSON.c:616)
+   n1: 26892544 0x403F6D: parse_value (cJSON.c:443)
+    n1: 26892544 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 26892544 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 26892544 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 26892544 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 26892544 0x40264C: do_socket (socket_client.c:235)
+         n1: 26892544 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 26892544 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 26892544 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1250816 in 2 places, all below massif's threshold (1.00%)
+ n1: 13778520 0x404A43: print_object (cJSON.c:690)
+  n1: 13778520 0x40404D: print_value (cJSON.c:476)
+   n1: 13778520 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 13778520 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 13778520 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 13778520 0x40264C: do_socket (socket_client.c:235)
+       n1: 13778520 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 13778520 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 13778520 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 10651480 0x40376E: parse_string (cJSON.c:201)
+  n2: 5315968 0x403EF4: parse_value (cJSON.c:431)
+   n1: 5149844 0x40471A: parse_object (cJSON.c:629)
+    n1: 5149844 0x403F6D: parse_value (cJSON.c:443)
+     n1: 5149844 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 5149844 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 5149844 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 5149844 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 5149844 0x40264C: do_socket (socket_client.c:235)
+          n1: 5149844 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 5149844 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 5149844 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 166124 in 1 place, below massif's threshold (1.00%)
+  n1: 5218248 0x4046A2: parse_object (cJSON.c:620)
+   n1: 5218248 0x403F6D: parse_value (cJSON.c:443)
+    n1: 5218248 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 5218248 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 5218248 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 5218248 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 5218248 0x40264C: do_socket (socket_client.c:235)
+         n1: 5218248 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 5218248 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 5218248 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 117264 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=1702124918
+mem_heap_B=54176523
+mem_heap_extra_B=16394013
+mem_stacks_B=0
+heap_tree=detailed
+n4: 54176523 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 28998720 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 27709888 0x40464C: parse_object (cJSON.c:616)
+   n1: 27709888 0x403F6D: parse_value (cJSON.c:443)
+    n1: 27709888 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 27709888 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 27709888 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 27709888 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 27709888 0x40264C: do_socket (socket_client.c:235)
+         n1: 27709888 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 27709888 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 27709888 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1288832 in 2 places, all below massif's threshold (1.00%)
+ n1: 14197290 0x404A43: print_object (cJSON.c:690)
+  n1: 14197290 0x40404D: print_value (cJSON.c:476)
+   n1: 14197290 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 14197290 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 14197290 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 14197290 0x40264C: do_socket (socket_client.c:235)
+       n1: 14197290 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 14197290 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 14197290 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 10975210 0x40376E: parse_string (cJSON.c:201)
+  n2: 5477536 0x403EF4: parse_value (cJSON.c:431)
+   n1: 5306363 0x40471A: parse_object (cJSON.c:629)
+    n1: 5306363 0x403F6D: parse_value (cJSON.c:443)
+     n1: 5306363 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 5306363 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 5306363 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 5306363 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 5306363 0x40264C: do_socket (socket_client.c:235)
+          n1: 5306363 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 5306363 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 5306363 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 171173 in 1 place, below massif's threshold (1.00%)
+  n1: 5376846 0x4046A2: parse_object (cJSON.c:620)
+   n1: 5376846 0x403F6D: parse_value (cJSON.c:443)
+    n1: 5376846 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 5376846 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 5376846 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 5376846 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 5376846 0x40264C: do_socket (socket_client.c:235)
+         n1: 5376846 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 5376846 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 5376846 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 120828 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=1735757733
+mem_heap_B=55247129
+mem_heap_extra_B=16717975
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1770404571
+mem_heap_B=56350029
+mem_heap_extra_B=17051715
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1805727442
+mem_heap_B=57474449
+mem_heap_extra_B=17391967
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1841726366
+mem_heap_B=58620389
+mem_heap_extra_B=17738731
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1880767455
+mem_heap_B=59863183
+mem_heap_extra_B=18114825
+mem_stacks_B=0
+heap_tree=detailed
+n4: 59863183 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 32042880 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 30618752 0x40464C: parse_object (cJSON.c:616)
+   n1: 30618752 0x403F6D: parse_value (cJSON.c:443)
+    n1: 30618752 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 30618752 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 30618752 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 30618752 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 30618752 0x40264C: do_socket (socket_client.c:235)
+         n1: 30618752 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 30618752 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 30618752 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1424128 in 2 places, all below massif's threshold (1.00%)
+ n1: 15687660 0x404A43: print_object (cJSON.c:690)
+  n1: 15687660 0x40404D: print_value (cJSON.c:476)
+   n1: 15687660 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 15687660 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 15687660 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 15687660 0x40264C: do_socket (socket_client.c:235)
+       n1: 15687660 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 15687660 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 15687660 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 12127340 0x40376E: parse_string (cJSON.c:201)
+  n2: 6052544 0x403EF4: parse_value (cJSON.c:431)
+   n1: 5863402 0x40471A: parse_object (cJSON.c:629)
+    n1: 5863402 0x403F6D: parse_value (cJSON.c:443)
+     n1: 5863402 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 5863402 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 5863402 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 5863402 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 5863402 0x40264C: do_socket (socket_client.c:235)
+          n1: 5863402 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 5863402 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 5863402 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 189142 in 1 place, below massif's threshold (1.00%)
+  n1: 5941284 0x4046A2: parse_object (cJSON.c:620)
+   n1: 5941284 0x403F6D: parse_value (cJSON.c:443)
+    n1: 5941284 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 5941284 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 5941284 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 5941284 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 5941284 0x40264C: do_socket (socket_client.c:235)
+         n1: 5941284 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 5941284 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 5941284 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 133512 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=1897330334
+mem_heap_B=60390409
+mem_heap_extra_B=18274359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1899696463
+mem_heap_B=60465743
+mem_heap_extra_B=18297161
+mem_stacks_B=0
+heap_tree=peak
+n4: 60465743 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 32365440 0x402F6D: cJSON_New_Item (cJSON.c:80)
+  n1: 30926976 0x40464C: parse_object (cJSON.c:616)
+   n1: 30926976 0x403F6D: parse_value (cJSON.c:443)
+    n1: 30926976 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 30926976 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 30926976 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 30926976 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 30926976 0x40264C: do_socket (socket_client.c:235)
+         n1: 30926976 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 30926976 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 30926976 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 1438464 in 2 places, all below massif's threshold (1.00%)
+ n1: 15845580 0x404A43: print_object (cJSON.c:690)
+  n1: 15845580 0x40404D: print_value (cJSON.c:476)
+   n1: 15845580 0x403DEE: cJSON_Print (cJSON.c:402)
+    n1: 15845580 0x402063: do_topic_and_msg (socket_client.c:64)
+     n1: 15845580 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+      n1: 15845580 0x40264C: do_socket (socket_client.c:235)
+       n1: 15845580 0x40290F: client_do_pthread (socket_client.c:313)
+        n1: 15845580 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+         n0: 15845580 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+ n3: 12249420 0x40376E: parse_string (cJSON.c:201)
+  n2: 6113472 0x403EF4: parse_value (cJSON.c:431)
+   n1: 5922426 0x40471A: parse_object (cJSON.c:629)
+    n1: 5922426 0x403F6D: parse_value (cJSON.c:443)
+     n1: 5922426 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+      n1: 5922426 0x403DCA: cJSON_Parse (cJSON.c:396)
+       n1: 5922426 0x402053: do_topic_and_msg (socket_client.c:63)
+        n1: 5922426 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+         n1: 5922426 0x40264C: do_socket (socket_client.c:235)
+          n1: 5922426 0x40290F: client_do_pthread (socket_client.c:313)
+           n1: 5922426 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+            n0: 5922426 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+   n0: 191046 in 1 place, below massif's threshold (1.00%)
+  n1: 6001092 0x4046A2: parse_object (cJSON.c:620)
+   n1: 6001092 0x403F6D: parse_value (cJSON.c:443)
+    n1: 6001092 0x403D33: cJSON_ParseWithOpts (cJSON.c:372)
+     n1: 6001092 0x403DCA: cJSON_Parse (cJSON.c:396)
+      n1: 6001092 0x402053: do_topic_and_msg (socket_client.c:63)
+       n1: 6001092 0x40228E: mqtt_do_publish_msg (socket_client.c:124)
+        n1: 6001092 0x40264C: do_socket (socket_client.c:235)
+         n1: 6001092 0x40290F: client_do_pthread (socket_client.c:313)
+          n1: 6001092 0x4E34EA4: start_thread (in /usr/lib64/libpthread-2.17.so)
+           n0: 6001092 0x564D8DC: clone (in /usr/lib64/libc-2.17.so)
+  n0: 134856 in 1 place, below massif's threshold (1.00%)
+ n0: 5303 in 13 places, all below massif's threshold (1.00%)
